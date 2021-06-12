@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+.home_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+.home_header a{       //for <Link>
+    margin-right: 20px;
+    text-decoration: inherit;
+    color: rgba(0,0,0,0.87);
+    font-size: 15px;
+}
+.home_header a:hover{     //when <Link> is clicked
+    text-decoration: underline;
+}
+.home_header_body {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    min-width: 13px;
+    justify-content: space-between;
+}
+.icon {
+    margin-right: 20px;
+}
+.logo_body{
+    flex: 1 1;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+}
+
+.logo_body > img {
+    object-fit: contain;
+    height: 100px;
+}
