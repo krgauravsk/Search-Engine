@@ -1,3 +1,4 @@
+@import "./../../scss/media-queries.scss";
 .form_container {
     padding: 20px;
 }
@@ -10,6 +11,9 @@
     padding: 5px 8px 0 14px;
     border-radius: 25px;
     margin: 0 auto;
+    @include respond-below(sm) {
+		width: auto;
+	}
 }
 .search_input > input {
     flex: 1;
@@ -32,6 +36,9 @@
 
 .search_button button { //for space b/w buttons
     margin: 5px;
+    @include respond-below(sm) {
+		margin: auto;
+	}
 }
 .languages {
     display: flex;

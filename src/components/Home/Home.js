@@ -23,8 +23,9 @@ const Home = () => {
             </div>
 
             <div className={style.logo_body}>
-                <img src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png' alt="google"/>
-            
+                <div className={style.logo_resp}>
+                    <img src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png' alt="google"/>
+                </div>
             {/* for Search Page */}
                 <div className={style.input_container}> 
                     <Search />

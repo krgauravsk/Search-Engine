@@ -1,7 +1,11 @@
+@import "./../../scss/media-queries.scss";
 .container {
     display: flex;
     flex-direction: column;
     height: 100px;
+    @include respond-below(sm) {
+		// padding-top: 8px;
+	}
 }
 .home_header {
     display: flex;
@@ -27,6 +31,11 @@
 }
 .icon {
     margin-right: 20px;
+}
+.logo_resp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .logo_body{
     flex: 1 1;
